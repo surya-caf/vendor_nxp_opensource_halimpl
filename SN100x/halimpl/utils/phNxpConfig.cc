@@ -428,9 +428,12 @@ int CNfcConfig::getconfiguration_id (char * config_file)
         case TARGET_SM7250:
         case TARGET_SM8150_SDx55:
         case TARGET_SM6125:
-        case TARGET_SM4250:
             config_id = QRD_TYPE_SN100;
             strlcpy(config_file, config_name_qrd_SN100, MAX_DATA_CONFIG_PATH_LEN);
+            break;
+        case TARGET_SM4250:
+            config_id = QRD_TYPE_SN100;
+            strlcpy(config_file, config_name_qrd_SN100_38_4MHZ, MAX_DATA_CONFIG_PATH_LEN);
             break;
         case TARGET_SDM845:
         case TARGET_SDM670:
@@ -490,9 +493,12 @@ int CNfcConfig::getconfiguration_id (char * config_file)
         case TARGET_SM7250:
         case TARGET_SM8150_SDx55:
         case TARGET_SM6125:
-        case TARGET_SM4250:
             config_id = MTP_TYPE_SN100;
             strlcpy(config_file, config_name_mtp_SN100, MAX_DATA_CONFIG_PATH_LEN);
+            break;
+        case TARGET_SM4250:
+            config_id = MTP_TYPE_SN100;
+            strlcpy(config_file, config_name_mtp_SN100_38_4MHZ, MAX_DATA_CONFIG_PATH_LEN);
             break;
         case TARGET_SDM845:
         case TARGET_SDM670:
