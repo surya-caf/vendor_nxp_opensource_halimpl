@@ -97,7 +97,7 @@ const char config_timestamp_path[] =
 char nxp_rf_config_path[256] =
         "/system/vendor/libnfc-nxp_RF.conf";
 char Fw_Lib_Path[256] =
-        "/vendor/lib/libsn100u_fw.so";
+        "/vendor/lib/libpn553_fw.so";
 const char transit_config_path[] = "/data/vendor/nfc/libnfc-nxpTransit.conf";
 /**
  *  @brief target platform ID values.
